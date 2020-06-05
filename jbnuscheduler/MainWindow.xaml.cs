@@ -15,44 +15,19 @@ using System.Windows.Shapes;
 
 namespace jbnuscheduler
 {
-    /// <summary>
-    /// MainWindow.xaml에 대한 상호 작용 논리
-    /// </summary>
     public partial class MainWindow : Window
     {
         // 사이즈 변경
         double orginalWidth, originalHeight;
         ScaleTransform scale = new ScaleTransform();
 
-
-        public MainWindow()
-        {
-            InitializeComponent();
-            this.Loaded += new RoutedEventHandler(Window1_Loaded);
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            Uri jbnuurl = new Uri("https://www.jbnu.ac.kr/kor/?menuID=139");
-            browser.Source = jbnuurl;
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            Uri compurl = new Uri("https://cse.jbnu.ac.kr/cse/3586/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGY3NlJTJGNTM4JTJGYXJ0Y2xMaXN0LmRvJTNG");
-            browser.Source = compurl;
-        }
-
-        private void Button_Click_2(object sender, RoutedEventArgs e)
-        {
-            browser.GoBack();
-        }
-
+        // 사이즈 변경
         void Window1_SizeChanged(object sender, SizeChangedEventArgs e)
         {
             ChangeSize(e.NewSize.Width, e.NewSize.Height);
         }
 
+        // 사이즈 변경
         void Window1_Loaded(object sender, RoutedEventArgs e)
 
         {
@@ -66,6 +41,8 @@ namespace jbnuscheduler
             this.SizeChanged += new SizeChangedEventHandler(Window1_SizeChanged);
 
         }
+
+        // 사이즈 변경
         private void ChangeSize(double width, double height)
 
         {
@@ -76,5 +53,38 @@ namespace jbnuscheduler
             rootElement.LayoutTransform = scale;
         }
 
+        public MainWindow()
+        {
+            InitializeComponent();
+            // 사이즈 변경
+            this.Loaded += new RoutedEventHandler(Window1_Loaded);
+        }
+
+        // 캘린더기능창 띄우기
+        private void Open_Calendar(object sender, RoutedEventArgs e)
+        {
+            Window Calendar = new Calendar();
+            Calendar.Show();
+        }
+
+        // 전북대학교 홈페이지 공지사항
+        private void Jbnu_Click(object sender, RoutedEventArgs e)
+        {
+            Uri jbnuurl = new Uri("https://www.jbnu.ac.kr/kor/?menuID=139");
+            browser.Source = jbnuurl;
+        }
+
+        // 컴퓨터공학부 공지사항
+        private void Computer_Click(object sender, RoutedEventArgs e)
+        {
+            Uri compurl = new Uri("https://cse.jbnu.ac.kr/cse/3586/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGY3NlJTJGNTM4JTJGYXJ0Y2xMaXN0LmRvJTNG");
+            browser.Source = compurl;
+        }
+
+        // 뒤로가기
+        private void Goback(object sender, RoutedEventArgs e)
+        {
+            browser.GoBack();
+        }
     }
 }
