@@ -23,5 +23,11 @@ namespace jbnuscheduler
         {
             InitializeComponent();
         }
+        private void calendar_SelectedDatesChanged(object sender, SelectionChangedEventArgs e)
+        {
+            year.Content = calendar.SelectedDate.Value.ToString("yyyy년");
+            month.Content = calendar.SelectedDate.Value.ToString("MM월");
+            day.Content = calendar.SelectedDate.Value.ToString("dd일");
+        }
     }
 }
