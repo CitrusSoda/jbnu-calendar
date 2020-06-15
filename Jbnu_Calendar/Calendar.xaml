@@ -5,10 +5,26 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Jbnu_Calendar" xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             Height="auto" Width="auto">
     <Grid>
         <materialDesign:TransitioningContent x:Name="TrainsitionigContentSlide" OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:0.8}">
-            <Calendar HorizontalAlignment="Left" VerticalAlignment="Top" Height="360" Width="280"/>
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom">
+                <!-- 캘린더 -->
+                <Calendar x:Name="calendar" HorizontalAlignment="Left" VerticalAlignment="Top" Height="360" Width="280" SelectedDatesChanged="calendar_SelectedDatesChanged" />
+                <!-- 캘린더 우측 스케줄 추가 -->
+                <StackPanel>
+                    <StackPanel Margin="10">
+                        <!-- 날짜 선택시 년월일 변경 -->
+                        <TextBlock x:Name="year" Text="2000년" FontSize="50" FontFamily="Champagne &amp; Limousines" Foreground="#FFCD8FFF"/>
+                        <TextBlock x:Name="month" Text="1월" FontSize="25" FontFamily="Champagne &amp; Limousines" FontWeight="Bold" Margin="5"/>
+                        <TextBlock x:Name="day" Text="1일" FontSize="20" FontFamily="Champagne &amp; Limousines" Margin="5"/>
+                    </StackPanel>
+                    <!-- 계획 추가 -->
+                    <Label Content="계획" HorizontalAlignment="Center" FontWeight="Bold" FontSize="24"/>
+                    <TextBox x:Name="plan" Height="70" Width="200" TextWrapping="Wrap" AcceptsReturn="True" FontSize="16" />
+                    <Button FontFamily="Champagne &amp; Limousines" Content="일정 추가" FontSize="18" Margin="50" Click="Button_Click"/>
+                </StackPanel>
+            </StackPanel>
         </materialDesign:TransitioningContent>
     </Grid>
 </UserControl>
