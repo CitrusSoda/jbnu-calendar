@@ -61,20 +61,8 @@
                 </ListViewItem>
                 <ListViewItem Height="60">
                     <StackPanel Orientation="Horizontal">
-                        <materialDesign:PackIcon Kind="TruckDelivery" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
-                        <TextBlock Text="ㄷ" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
-                    </StackPanel>
-                </ListViewItem>
-                <ListViewItem Height="60">
-                    <StackPanel Orientation="Horizontal">
-                        <materialDesign:PackIcon Kind="Cash" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
-                        <TextBlock Text="ㄹ" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
-                    </StackPanel>
-                </ListViewItem>
-                <ListViewItem Height="60">
-                    <StackPanel Orientation="Horizontal">
-                        <materialDesign:PackIcon Kind="AccountStar" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
-                        <TextBlock Text="ㅁ" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
+                        <materialDesign:PackIcon Kind="WbSunny" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
+                        <TextBlock Text="Weather" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
                     </StackPanel>
                 </ListViewItem>
             </ListView>

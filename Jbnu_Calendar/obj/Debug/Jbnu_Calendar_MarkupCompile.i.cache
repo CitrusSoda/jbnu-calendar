@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\dndhk\Desktop\Jbnu_Calendar\Jbnu_Calendar\obj\Debug\
+C:\Users\dndhk\Desktop\jbnu-calendar-master\Jbnu_Calendar\obj\Debug\
 Jbnu_Calendar
 none
 false
 DEBUG;TRACE
-C:\Users\dndhk\Desktop\Jbnu_Calendar\Jbnu_Calendar\App.xaml
-4944074776
+C:\Users\dndhk\Desktop\jbnu-calendar-master\Jbnu_Calendar\App.xaml
+5920076560
 2-1560107453
-131485115172
-20-1621737912
-Calendar.xaml;CalendarList.xaml;MainWindow.xaml;Notice.xaml;
+14-1920844601
+20-1457719006
+Calendar.xaml;CalendarList.xaml;MainWindow.xaml;Notice.xaml;Weather.xaml;
 
-False
+True
 

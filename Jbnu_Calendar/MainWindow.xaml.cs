@@ -37,6 +37,10 @@ namespace Jbnu_Calendar
                     GridPrincipal.Children.Clear();
                     GridPrincipal.Children.Add(new CalendarList());
                     break;
+                case 3:
+                    GridPrincipal.Children.Clear();
+                    GridPrincipal.Children.Add(new Weather());
+                    break;
                 default:
                     break;
             }
