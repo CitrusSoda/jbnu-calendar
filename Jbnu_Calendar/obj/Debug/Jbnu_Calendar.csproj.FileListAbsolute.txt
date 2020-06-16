@@ -102,5 +102,3 @@ C:\Users\dndhk\Desktop\jbnu-calendar-master\Jbnu_Calendar\obj\Debug\Jbnu_Calenda
 C:\Users\dndhk\Desktop\jbnu-calendar-master\Jbnu_Calendar\obj\Debug\Jbnu_Calendar.pdb
 C:\Users\dndhk\Desktop\jbnu-calendar-master\Jbnu_Calendar\obj\Debug\Weather.g.cs
 C:\Users\dndhk\Desktop\jbnu-calendar-master\Jbnu_Calendar\obj\Debug\Weather.baml
-C:\Users\dndhk\Desktop\jbnucalendar\Jbnu_Calendar\obj\Debug\Weather.g.cs
-C:\Users\dndhk\Desktop\jbnucalendar\Jbnu_Calendar\obj\Debug\Weather.baml
